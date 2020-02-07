@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>CSS 3D Weather Card UI Design - CSS User Interface Design Tutorial - Part 1
-</title>
-<!--<link rel="stylesheet" type="text/css" href="style.css">-->
-<script src = "https://unpkg.com/vue"></script> 
-<style>
-    .stretch-card>.card {
+.stretch-card>.card {
     width: 800px;
     height:477px;
  }
@@ -62,7 +54,7 @@
  }
 
  .card-weather .card-body:first-child {
-     background: url("https://3.bp.blogspot.com/-MmxJ6Uh54oI/WJvv5Bb78LI/AAAAAAAAAmU/Oil9g1JyNigPjckrftHQpxZIWOJihqNuwCLcB/s1600/fghjk.gif 	") no-repeat center;
+     background: url("https://cdn.mos.cms.futurecdn.net/3d5d3384e649642b5a3ef456e3779053-970-80.jpg") no-repeat center;
      background-size: cover
  }
 
@@ -101,7 +93,7 @@
  }
 
  p {
-     font-size: 13px
+     font-size: 13px;margin-block-start:0em
  }
 
  .text-gray,
@@ -157,43 +149,3 @@
  .todaycolor:nth-child(2) {
      color:skyblue;
  }
-</style>
-
-</head>
-<body>
-    <div class="page-content page-container" id="page-content">
-        <div class="padding" id="wd">
-            <div class="row container d-flex justify-content-center">
-                <div class="col-lg-8 grid-margin stretch-card">
-                    <!--weather card-->
-                    <div class="card card-weather">
-                        <div class="card-body">
-                            <div class="weather-date-location">
-                                <h1 id = "main_day">Friday</h1>
-                                <p class="text-gray"> <span class="weather-date" id = "main_FullDay">25 March, 2019</span> <span class="weather-location">Sydney, Australia</span> </p>
-                            </div>
-                            <div class="weather-data d-flex">
-                                <div class="mr-auto">
-                                    <h4 class="display-3" id="main_degree">32 <span class="symbol">°</span>C</h4>
-                                    <p style="font-family: 'Poppins',sans-serif;color:black ;font-size:90%;text-shadow: 2px 2px 2px gray"> Cloudy </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-body p-0">
-                            <div class="d-flex weakly-weather">
-                                <weather-item v-for="item in weatherlist" v-bind:weather = "item">
-
-                                </weather-item>
-                            </div>
-                        </div>
-                    </div>
-                    <!--weather card ends-->
-                </div>
-            </div>
-        </div>
-    </div>
-</body>
-
-<script src = "https://unpkg.com/vue"></script> 
-<script src="weather.js"></script>
-</html>
